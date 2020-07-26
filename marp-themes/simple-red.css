@@ -1,0 +1,35 @@
+/* @theme simple-red */
+@import 'default';
+
+:root {
+    --key-color: #d30909;
+    --primary-color: #711313;
+    --base-color: #eeeeee;
+}
+
+section::before {
+    content: "";
+    bottom: 0;
+    right: 0;
+    border-top: 4em solid transparent;
+    border-right: 4em solid var(--key-color);
+    position: absolute;
+    z-index: 99;
+}
+
+section {
+    font-family: "Arial", "Hiragino Maru Gothic ProN";
+    background-color: var(--base-color);
+    font-size: 32px;
+    padding: 30px;
+}
+
+section h1 {
+    color: var(--key-color);
+    text-align: center;
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
